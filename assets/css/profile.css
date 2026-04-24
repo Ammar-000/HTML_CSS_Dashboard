@@ -1,0 +1,168 @@
+/* #region Widgets */
+
+/* #region General */
+
+.content>.widgets {
+  grid-template-columns: 1fr 2.08fr;
+}
+
+@media (max-width: 767px) {
+  .content>.widgets {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* #region Header */
+
+.widget>header {
+  margin-top: 5px;
+  margin-bottom: 23px;
+}
+
+.widget>header>p {
+  margin-top: 12px;
+  color: var(--color-gray);
+  font-size: 15px;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region Widget Overview */
+
+.wid-overview {
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.wid-overview>.summary {
+  width: 250px;
+}
+
+@media (min-width: 768px) {
+  .wid-overview>.summary {
+    border-right: 1px solid #eee;
+  }
+}
+
+.wid-overview>.summary>img {
+  width: 120px;
+  height: 120px;
+}
+
+.wid-overview>.summary>.progress {
+  width: 150px;
+  height: 6px;
+}
+
+.wid-overview>.summary>.progress>span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+}
+
+.wid-overview>.summary>.rate {
+  column-gap: 3px;
+  color: #f59e0b;
+}
+
+.wid-overview>.options>div {
+  grid-template-columns: repeat(auto-fill, minmax(auto, 250px));
+  transition: background-color var(--main-trans-duration);
+}
+
+.wid-overview>.options>div:hover {
+  background-color: #f9f9f9;
+}
+
+.wid-overview>.options h4 {
+  font-weight: 500;
+}
+
+.wid-overview>.options .toggle-switch {
+  --width: 78px;
+  --height: 20px;
+  --fs: 8px;
+}
+
+@media (max-width: 767px) {
+  .wid-overview {
+    flex-direction: column;
+  }
+
+  .wid-overview>.options {
+    align-self: stretch;
+  }
+
+  .wid-overview>.options>div {
+    justify-content: center;
+    justify-items: center;
+  }
+}
+
+/* #endregion */
+
+/* #region Widget Skills */
+
+.wid-skills>div {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .wid-skills>div {
+    justify-content: center;
+  }
+}
+
+.wid-skills>div>span {
+  cursor: auto;
+}
+
+/* #endregion */
+
+/* #region Widget Latest Activities */
+
+.wid-activities>.activity>img {
+  width: 64px;
+  height: 64px;
+}
+
+.wid-activities>.activity>div {
+  grid-template-columns: auto auto;
+  gap: 12px;
+}
+
+.wid-activities>.activity h3 {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .wid-activities>.activity .time {
+    justify-self: end;
+  }
+}
+
+@media (max-width: 767px) {
+  .wid-activities>.activity {
+    flex-direction: column;
+  }
+
+  .wid-activities>.activity>div {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .wid-activities>.activity .time {
+    order: 1;
+  }
+
+  .wid-activities>.activity .day {
+    order: 2;
+  }
+}
+
+/* #endregion */
+
+/* #endregion */

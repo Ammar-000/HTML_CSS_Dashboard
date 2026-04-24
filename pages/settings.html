@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/fonts.css">
+  <link rel="stylesheet" href="/assets/css/font_awesome_icons_all.css">
+  <link rel="stylesheet" href="/assets/css/normalize.css">
+  <link rel="stylesheet" href="/assets/css/framework.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/settings.css">
+  <title>Settings</title>
+</head>
+
+<body>
+  <main class="d-flex">
+
+    <!-- #region Sidebar -->
+    <aside class="sidebar p-20 bg-white">
+      <span class="p-relative">Ammar</span>
+      <ul class="d-flex">
+        <li class="rad-6">
+          <a href="/index.html" class="p-10 c-black fs-14 d-flex align-cen">
+            <i class="far fa-chart-bar fa-fw"></i>
+            <span class="hide-mobile">Dashboard</span>
+          </a>
+        </li>
+        <li class="rad-6 active">
+          <a href="/pages/settings.html" class="p-10 c-black fs-14 d-flex align-cen">
+            <i class="fa-solid fa-gear fa-fw"></i>
+            <span class="hide-mobile">Settings</span>
+          </a>
+        </li>
+        <li class="rad-6">
+          <a href="/pages/profile.html" class="p-10 c-black fs-14 d-flex align-cen">
+            <i class="fa-regular fa-user fa-fw"></i>
+            <span class="hide-mobile">Profile</span>
+          </a>
+        </li>
+        <li class="rad-6">
+          <a href="/pages/projects.html" class="p-10 c-black fs-14 d-flex align-cen">
+            <i class="fa-solid fa-diagram-project fa-fw"></i>
+            <span class="hide-mobile">Projects</span>
+          </a>
+        </li>
+        <li class="rad-6">
+          <a href="/pages/courses.html" class="p-10 c-black fs-14 d-flex align-cen">
+            <i class="fa-solid fa-graduation-cap fa-fw"></i>
+            <span class="hide-mobile">Courses</span>
+          </a>
+        </li>
+        <li class="rad-6">
+          <a href="/pages/friends.html" class="p-10 c-black fs-14 d-flex align-cen">
+            <i class="fa-regular fa-circle-user fa-fw"></i>
+            <span class="hide-mobile">Friends</span>
+          </a>
+        </li>
+        <li class="rad-6">
+          <a href="/pages/files.html" class="p-10 c-black fs-14 d-flex align-cen">
+            <i class="fa-regular fa-file fa-fw"></i>
+            <span class="hide-mobile">Files</span>
+          </a>
+        </li>
+        <li class="rad-6">
+          <a href="/pages/plans.html" class="p-10 c-black fs-14 d-flex align-cen">
+            <i class="fa-regular fa-credit-card fa-fw"></i>
+            <span class="hide-mobile">Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <!-- #endregion -->
+
+    <!-- #region Content -->
+    <section class="content">
+
+      <!-- #region Header -->
+      <header class="d-flex-sb-cen bg-white p-15">
+        <div class="search p-relative">
+          <input class="p-10 rad-10" type="text" placeholder="Type A Keyword">
+        </div>
+        <div class="icons d-flex-cen-cen">
+          <i class="fa-regular fa-bell c-black p-relative"></i>
+          <img src="/assets/images/avatar.png" alt="Avatar">
+        </div>
+      </header>
+      <!-- #endregion -->
+
+      <h1 class="p-relative">Settings</h1>
+
+      <!-- #region Widgets -->
+      <section class="widgets d-grid gap-20">
+
+        <!-- #region Widget Site Control -->
+        <section class="widget wid-site-con">
+          <header>
+            <h2>Site Control</h2>
+            <p>Control The Website If There Is Maintenance</p>
+          </header>
+          <div class="option d-flex mb-30">
+            <div class="flex-1-1">
+              <span class="d-block mb-8 fs-16">Website Control</span>
+              <p class="fs-13 c-gray">Open/Close Website And Type The Reason</p>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" checked>
+              <span></span>
+            </label>
+          </div>
+          <textarea class="w-full p-10 fs-13 rad-6 bor-1-c" placeholder="Close Message Content"></textarea>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #region Widget General Info -->
+        <section class="widget wid-gen-info">
+          <header>
+            <h2>General Info</h2>
+            <p>General Information About Your Account</p>
+          </header>
+          <form class="d-flex-col gap-r-15" action="">
+            <label class="fs-14 c-gray">
+              First Name
+              <input class="d-block w-full mt-10 p-10 fs-13 c-black rad-6 bor-1-c" name="fName" type="text"
+                placeholder="First Name">
+            </label>
+            <label class="fs-14 c-gray">
+              Last Name
+              <input class="d-block w-full mt-10 p-10 fs-13 c-black rad-6 bor-1-c" name="lName" type="text"
+                placeholder="Last Name">
+            </label>
+            <div class="d-flex gap-c-15">
+              <label class="fs-14 c-gray flex-1-1">
+                Email
+                <input class="d-block w-full mt-10 p-10 fs-13 rad-6 bor-1-c" name="email" type="email" value="o@nn.sa"
+                  disabled>
+              </label>
+              <a class="c-blue mr-10 mb-10 bg-white" href="#">Change</a>
+            </div>
+          </form>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #region Widget Security Info -->
+        <section class="widget wid-sec-info">
+          <header>
+            <h2>Security Info</h2>
+            <p>Security Information About Your Account</p>
+          </header>
+          <div class="options d-flex-col gap-r-15">
+            <div class="d-flex-sb-cen pb-30 bor-b-1-e">
+              <div>
+                <span>Password</span>
+                <p class="mt-8 fs-13 c-gray">Last Change On 25/10/2021</p>
+              </div>
+              <a class="button mt-10" href="#">Change</a>
+            </div>
+            <div class="d-flex-sb-cen pb-30 bor-b-1-e">
+              <div>
+                <span>Two-Factor Authentication</span>
+                <p class="mt-8 fs-13 c-gray">Enable/Disable The Feature</p>
+              </div>
+              <label class="toggle-switch mt-10">
+                <input type="checkbox" checked>
+                <span></span>
+              </label>
+            </div>
+            <div class="d-flex-sb-cen pb-30">
+              <div>
+                <span>Devices</span>
+                <p class="mt-8 fs-13 c-gray">Check The Login Devices List</p>
+              </div>
+              <a class="btn-shape mt-10 bg-eee c-black" href="#">Devices</a>
+            </div>
+          </div>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #region Widget Social Info -->
+        <section class="widget wid-soc-info">
+          <header>
+            <h2>Social Info</h2>
+            <p>Social Media Information</p>
+          </header>
+          <div class="options d-flex-col gap-r-15">
+            <div class="d-flex rad-6 bor-1-d over-hid">
+              <i class="fa-brands fa-twitter d-flex-cen-cen c-gray"></i>
+              <input class="flex-1-1 fs-13" type="text" placeholder="Twitter Username">
+            </div>
+            <div class="d-flex rad-6 bor-1-d over-hid">
+              <i class="fa-brands fa-facebook-f d-flex-cen-cen c-gray"></i>
+              <input class="flex-1-1 fs-13" type="text" placeholder="Facebook Username">
+            </div>
+            <div class="d-flex rad-6 bor-1-d over-hid">
+              <i class="fa-brands fa-linkedin d-flex-cen-cen c-gray"></i>
+              <input class="flex-1-1 fs-13" type="text" placeholder="Linkedin Username">
+            </div>
+            <div class="d-flex rad-6 bor-1-d over-hid">
+              <i class="fa-brands fa-youtube d-flex-cen-cen c-gray"></i>
+              <input class="flex-1-1 fs-13" type="text" placeholder="Youtube Username">
+            </div>
+          </div>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #region Widget Widgets Control -->
+        <section class="widget wid-wid-cont">
+          <header>
+            <h2>Widgets Control</h2>
+            <p>Show/Hide Widgets</p>
+          </header>
+          <div class="d-flex-col">
+            <label class="cust-checkbox">
+              <input type="checkbox" checked>
+              <span></span>
+              Quick Draft
+            </label>
+            <label class="cust-checkbox">
+              <input type="checkbox" checked>
+              <span></span>
+              Yearly Targets
+            </label>
+            <label class="cust-checkbox">
+              <input type="checkbox" checked>
+              <span></span>
+              Tickets Statistics
+            </label>
+            <label class="cust-checkbox">
+              <input type="checkbox" checked>
+              <span></span>
+              Latest News
+            </label>
+            <label class="cust-checkbox">
+              <input type="checkbox">
+              <span></span>
+              Latest Tasks
+            </label>
+            <label class="cust-checkbox">
+              <input type="checkbox" checked>
+              <span></span>
+              Top Search Items
+            </label>
+          </div>
+        </section>
+        <!-- #endregion -->
+
+        <!-- #region WidgetBackup Manager -->
+        <section class="widget wid-back-man">
+          <header>
+            <h2>Backup Manager</h2>
+            <p>Control Backup Time And Location</p>
+          </header>
+          <div class="d-flex-col gap-r-15 mb-20 pb-15 bor-b-1-e">
+            <label class="cust-rdo-1">
+              <input name="rdoFrequency" type="radio" checked>
+              <span></span>
+              Daily
+            </label>
+            <label class="cust-rdo-1">
+              <input name="rdoFrequency" type="radio">
+              <span></span>
+              Weekly
+            </label>
+            <label class="cust-rdo-1">
+              <input name="rdoFrequency" type="radio">
+              <span></span>
+              Monthly
+            </label>
+          </div>
+          <div class="d-flex gap-c-5">
+            <label class="cust-rdo-2 flex-1-1">
+              <input name="rdoServer" type="radio">
+              <span>Megaman</span>
+            </label>
+            <label class="cust-rdo-2 flex-1-1">
+              <input name="rdoServer" type="radio" checked>
+              <span>Zero</span>
+            </label>
+            <label class="cust-rdo-2 flex-1-1">
+              <input name="rdoFrequency2" type="radio">
+              <span>Sigma</span>
+            </label>
+          </div>
+        </section>
+        <!-- #endregion -->
+
+      </section>
+      <!-- #endregion -->
+
+    </section>
+    <!-- #endregion -->
+
+  </main>
+</body>
+
+</html>

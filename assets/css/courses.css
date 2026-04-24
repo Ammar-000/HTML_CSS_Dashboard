@@ -1,0 +1,65 @@
+/* #region Widgets */
+
+/* #region General */
+
+.content>.widgets {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .content>.widgets {
+    grid-template-columns: 1fr;
+  }
+}
+
+.widget {
+  padding: 0;
+  border-radius: 6px;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region Widget Course */
+
+.widget>.instructor {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 64px;
+  height: 64px;
+  border: 2px solid white;
+}
+
+.widget>p {
+  line-height: 1.6;
+}
+
+.widget>footer {
+  margin-top: 35px;
+}
+
+.widget>footer>span:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: auto;
+}
+
+.widget>footer>.students::before {
+  content: "\f007  ";
+  font-family: "Font Awesome 7 Free";
+  font-weight: normal;
+}
+
+.widget>footer>.price::before {
+  content: "\24  ";
+  font-family: "Font Awesome 7 Free";
+  font-weight: bold;
+}
+
+/* #endregion */
+
+/* #endregion */

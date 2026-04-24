@@ -1,0 +1,80 @@
+/* #region Widgets */
+
+/* #region General */
+
+.content>.widgets {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 767px) {
+  .content>.widgets {
+    grid-template-columns: 1fr;
+  }
+}
+
+.widget {
+  border-radius: 6px;
+}
+
+/* #endregion */
+
+/* #region Widget Friend */
+
+.widget>.contact {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.widget>.contact>i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  color: #666;
+  cursor: pointer;
+  transition: background-color var(--main-trans-duration), color var(--main-trans-duration);
+}
+
+.widget>.contact>i:hover {
+  background-color: var(--color-blue);
+  color: white;
+}
+
+.widget>header>img {
+  width: 100px;
+  height: 100px;
+}
+
+.widget>header>h2 {
+  margin-top: 18px;
+  margin-bottom: 7px;
+}
+
+.widget>.body {
+  margin-top: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.widget>.body>div {
+  row-gap: 14px;
+}
+
+.widget>.body>span {
+  font-size: 40px;
+  opacity: 0;
+}
+
+.widget.vip>.body>span {
+  opacity: 0.2;
+}
+
+.widget>footer>div {
+  column-gap: 3.5px;
+}
+
+/* #endregion */
+
+/* #endregion */
