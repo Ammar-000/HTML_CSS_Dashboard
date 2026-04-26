@@ -2,7 +2,7 @@
 
 ## 🚀 Live Demo
 You can view the live project here:  
-👉 [Live Demo](https://html-css-dashboard-phi.vercel.app/)
+👉 [Dashboard](https://html-css-dashboard-phi.vercel.app/)
 
 ## 📖 Overview
 This project is part of my frontend development practice, built using HTML and CSS.  
